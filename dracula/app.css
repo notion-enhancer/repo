@@ -1,14 +1,14 @@
-/*
- * dracula
- * (c) 2020 @mimishahzad386#5651
- * (c) 2020 dragonwocky <thedragonring.bod@gmail.com> (https://dragonwocky.me/)
+/**
+ * notion-enhancer: dracula
+ * (c) 2016 Dracula Theme
  * (c) 2020 CloudHill
- * under the MIT license
+ * (c) 2020 mimishahzad
+ * (c) 2021 dragonwocky <thedragonring.bod@gmail.com> (https://dragonwocky.me/)
+ * (https://notion-enhancer.github.io/) under the MIT license
  */
- 
+
 .notion-dark-theme img[src*='/images/onboarding/use-case-note.png'],
-.notion-dark-theme
-  img[src*='/images/onboarding/team-features-illustration.png'] {
+.notion-dark-theme img[src*='/images/onboarding/team-features-illustration.png'] {
   filter: invert(1) !important;
 }
 .notion-dark-theme img[src*='/images/onboarding/checked.svg'] {
@@ -27,13 +27,7 @@
   filter: brightness(1.2);
 }
 
-.notion-dark-theme
-  [style*='font-family: Fira Code, Menlo, Courier, monospace;'] {
-  filter: hue-rotate(170deg) !important;
-}
-
-.notion-dark-theme
-  .notion-token-remove-button[role*='button'][tabindex*='0']:hover,
+.notion-dark-theme .notion-token-remove-button[role*='button'][tabindex*='0']:hover,
 .notion-dark-theme .notion-record-icon {
   background: transparent !important;
 }
@@ -41,9 +35,7 @@
 .notion-dark-theme .notion-focusable:focus-within,
 .notion-dark-theme .notion-to_do-block > div > div > div[style*='background:'],
 .notion-dark-theme div[role='button'],
-[style*='height: 4px;']
-  > .notion-selectable.notion-collection_view_page-block
-  > *,
+[style*='height: 4px;'] > .notion-selectable.notion-collection_view_page-block > *,
 .notion-dark-theme .notion-calendar-view-day[style*='background: #282a36;'],
 .DayPicker-Day--today,
 .notion-dark-theme
@@ -89,9 +81,4 @@
 
 .notion-dark-theme .notion-code-block .token.punctuation {
   opacity: 1;
-}
-
-
-.notion-dark-theme [class^="notion-outliner"] [style*="background: rgb(71, 76, 80);"] .triangle[fill] {
-  fill: var(--theme--text)
 }

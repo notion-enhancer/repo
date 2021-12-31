@@ -1,13 +1,12 @@
-/*
- * pastel dark
- * (c) 2020 dragonwocky <thedragonring.bod@gmail.com> (https://dragonwocky.me/)
+/**
+ * notion-enhancer: pastel dark
  * (c) 2020 u/zenith_illinois
- * under the MIT license
+ * (c) 2021 dragonwocky <thedragonring.bod@gmail.com> (https://dragonwocky.me/)
+ * (https://notion-enhancer.github.io/) under the MIT license
  */
 
 .notion-dark-theme img[src*='/images/onboarding/use-case-note.png'],
-.notion-dark-theme
-  img[src*='/images/onboarding/team-features-illustration.png'] {
+.notion-dark-theme img[src*='/images/onboarding/team-features-illustration.png'] {
   filter: invert(1) !important;
 }
 .notion-dark-theme img[src*='/images/onboarding/checked.svg'] {
@@ -26,13 +25,7 @@
   filter: brightness(1.2);
 }
 
-.notion-dark-theme
-  [style*='font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;'] {
-  filter: hue-rotate(170deg) !important;
-}
-
-.notion-dark-theme
-  .notion-token-remove-button[role*='button'][tabindex*='0']:hover,
+.notion-dark-theme .notion-token-remove-button[role*='button'][tabindex*='0']:hover,
 .notion-dark-theme .notion-record-icon {
   background: transparent !important;
 }
@@ -40,11 +33,8 @@
 .notion-dark-theme .notion-focusable:focus-within,
 .notion-dark-theme .notion-to_do-block > div > div > div[style*='background:'],
 .notion-dark-theme div[role='button'],
-[style*='height: 4px;']
-  > .notion-selectable.notion-collection_view_page-block
-  > *,
-.notion-dark-theme
-  .notion-calendar-view-day[style*='background: rgb(235, 87, 87);'],
+[style*='height: 4px;'] > .notion-selectable.notion-collection_view_page-block > *,
+.notion-dark-theme .notion-calendar-view-day[style*='background: rgb(235, 87, 87);'],
 .DayPicker-Day--today,
 .notion-dark-theme
   .DayPicker:not(.DayPicker--interactionDisabled)
@@ -58,7 +48,11 @@
   transition: color 0.4s ease, background 0.4s ease, box-shadow 0.4s ease !important;
 }
 
-.notion-dark-theme [style*='background: rgb(63, 68, 71);'],
+.notion-dark-theme :not(.notion-code-block) > * > [style*='background: rgb(63, 68, 71);'],
+.notion-dark-theme
+  .notion-code-block
+  [style*='background: rgb(63, 68, 71);']
+  .notion-code-block,
 .notion-dark-theme
   [style*='background: rgb(80, 85, 88);'][style*='color: rgba(255, 255, 255, 0.7)'],
 .notion-dark-theme
