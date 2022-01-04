@@ -1,0 +1,94 @@
+{
+  "name": "sidebar-sections",
+  "id": "1f7dad34-39fa-4b06-ba48-efee54d5615e",
+  "version": "0.1.0",
+  "description": "create spaced sections in sidebar with optional headers.",
+  "preview": "sidebar-sections.png",
+  "tags": ["extension", "customisation"],
+  "authors": [
+    {
+      "name": "EliWimmer",
+      "email": "eliwimm@gmail.com",
+      "homepage": "eliwimmer.com",
+      "avatar": "https://pbs.twimg.com/profile_images/1455549675587571718/tBCCFF97_400x400.jpg"
+    }
+  ],
+  "css": {
+    "client": ["client.css"]
+  },
+  "js": {
+    "client": ["client.mjs"]
+  },
+  "options": [
+    {
+      "type": "text",
+      "key": "section.one",
+      "label": "section 1 top page (page id)",
+      "tooltip": "the uuid of the sidebar page that will be the top of a section -  (the bit after the '/' in the database url, e.g. edbafbd8bb7045cab1408aadaf4edf9d) ",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "title.one",
+      "label": "section 1 title (optional)",
+      "tooltip": "a title to appear above the section. leave blank for spacing only",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "section.two",
+      "label": "section 2 top page",
+      "tooltip": "the uuid of the sidebar page that will be the top of a section -  (the bit after the '/' in the database url, e.g. edbafbd8bb7045cab1408aadaf4edf9d) ",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "title.two",
+      "label": "section 2 title",
+      "tooltip": "a title to appear above the section. leave blank for spacing only",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "section.three",
+      "label": "section 3 top page",
+      "tooltip": "the uuid of the sidebar page that will be the top of a section -  (the bit after the '/' in the database url, e.g. edbafbd8bb7045cab1408aadaf4edf9d) ",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "title.three",
+      "label": "section 3 title",
+      "tooltip": "a title to appear above the section. leave blank for spacing only",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "section.four",
+      "label": "section 4 top page",
+      "tooltip": "the uuid of the sidebar page that will be the top of a section -  (the bit after the '/' in the database url, e.g. edbafbd8bb7045cab1408aadaf4edf9d) ",
+      "value": ""
+    },
+    {
+      "type": "text",
+      "key": "title.four",
+      "label": "section 4 title",
+      "tooltip": "a title to appear above the section. leave blank for spacing only",
+      "value": ""
+    },
+    {
+      "type": "select",
+      "key": "userMargin",
+      "label": "section size",
+      "tooltip": "space between sections (large: 30px, medium: 20px, small: 10px)",
+      "values": ["small", "medium", "large"]
+    },
+    {
+      "type": "toggle",
+      "key": "hidePrivate",
+      "label": "hide private section title",
+      "tooltip": "hide the title of the private section if in use",
+      "value": false
+    }
+  ]
+}

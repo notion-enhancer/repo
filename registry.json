@@ -11,7 +11,7 @@
   "tabs",
   "always-on-top",
   "view-scale",
-
+  
   "outliner",
   "scroll-to-top",
   "indentation-lines",
@@ -29,6 +29,7 @@
   "truncated-titles",
   "focus-mode",
   "global-block-links",
+  "sidebar-sections",
 
   "icon-sets",
   "quick-note",
