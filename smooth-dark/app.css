@@ -1,0 +1,190 @@
+/**
+ * notion-enhancer: smooth dark
+ * (c) 2022 blorbb (https://github.com/blorbb)
+ * (https://notion-enhancer.github.io/) under the MIT license
+ */
+
+/* rounded highlight corners */
+/* gray, orange, yellow, green, blue, purple, pink, red*/
+.notion-body:not(.dark)
+  [style*='background: rgba(241, 241, 239, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(241, 241, 239, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(241, 241, 239)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(241, 241, 239)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(241, 241, 239, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(60, 65, 68, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(60, 65, 68, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(60, 65, 68)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(60, 65, 68)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(60, 65, 68, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(244, 238, 238, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(244, 238, 238, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(244, 238, 238)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(244, 238, 238)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(244, 238, 238, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(76, 61, 53, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(76, 61, 53, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(76, 61, 53)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(76, 61, 53)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(76, 61, 53, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(251, 236, 221, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(251, 236, 221, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(251, 236, 221)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(251, 236, 221)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(251, 236, 221, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(85, 59, 41, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(85, 59, 41, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(85, 59, 41)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(85, 59, 41)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(85, 59, 41, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(251, 243, 219, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(251, 243, 219, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(251, 243, 219)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(251, 243, 219)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(251, 243, 219, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(79, 64, 41, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(79, 64, 41, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(79, 64, 41)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(79, 64, 41)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(79, 64, 41, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(237, 243, 236, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(237, 243, 236, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(237, 243, 236)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(237, 243, 236)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(237, 243, 236, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(46, 68, 58, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(46, 68, 58, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(46, 68, 58)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(46, 68, 58)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(46, 68, 58, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(231, 243, 248, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(231, 243, 248, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(231, 243, 248)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(231, 243, 248)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(231, 243, 248, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(45, 66, 86, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(45, 66, 86, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(45, 66, 86)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(45, 66, 86)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(45, 66, 86, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(244, 240, 247, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(244, 240, 247, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(244, 240, 247, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(244, 240, 247, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(244, 240, 247, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(69, 58, 91, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(69, 58, 91, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(69, 58, 91)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(69, 58, 91)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(69, 58, 91, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(249, 238, 243, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(249, 238, 243, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(249, 238, 243, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(249, 238, 243, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(249, 238, 243, 0.8)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(81, 56, 77, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(81, 56, 77, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(81, 56, 77)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(81, 56, 77)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(81, 56, 77, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgba(253, 235, 236, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgba(253, 235, 236, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background: rgb(253, 235, 236)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background:rgb(253, 235, 236)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body:not(.dark)
+  [style*='background-color: rgba(253, 235, 236, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgba(94, 52, 54, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgba(94, 52, 54, 1)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background: rgb(94, 52, 54)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background:rgb(94, 52, 54)']:not([style*='border-radius']):not([style*='box-shadow']),
+.notion-body.dark
+  [style*='background-color: rgba(94, 52, 54, 1)']:not([style*='border-radius']):not([style*='box-shadow']) {
+  border-radius: calc(var(--smooth_dark--highlight-border-radius, 3) * 1px) !important;
+}

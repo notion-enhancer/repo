@@ -1,0 +1,207 @@
+/**
+ * notion-enhancer: smooth dark
+ * (c) 2022 blorbb (https://github.com/blorbb)
+ * (https://notion-enhancer.github.io/) under the MIT license
+ */
+
+:root.dark {
+  --smooth_dark--highlight-text: rgba(255, 255, 255, 1); /* changed in pastel mode */
+  --smooth_dark--board-card: rgba(255, 255, 255, 0.05);
+  --smooth_dark--tag-text: #fff;
+
+  --theme--accent_blue: var(--smooth_dark--accent_blue, rgb(255, 171, 0));
+  --theme--accent_blue-selection: var(
+    --smooth_dark--accent_blue-selection,
+    rgba(255, 171, 0, 0.2)
+  );
+  --theme--accent_blue-hover: var(--smooth_dark--accent_blue-hover, rgb(255, 177, 18));
+  --theme--accent_blue-active: var(--smooth_dark--accent_blue-active, rgb(255, 184, 41));
+  --theme--accent_blue-text: var(--smooth_dark--accent_blue-text, #fff);
+  --theme--accent_red: var(--smooth_dark--accent_red, #eb5757);
+  --theme--accent_red-button: var(
+    --smooth_dark--accent_red-button,
+    rgba(235, 87, 87, 0.1)
+  );
+  --theme--accent_red-text: var(--smooth_dark--accent_red-text, #fff);
+  --a: ;
+  --theme--bg: var(--smooth_dark--bg, rgb(33, 39, 52));
+  --theme--bg_secondary: var(--smooth_dark--bg_secondary);
+  --theme--bg_card: var(--smooth_dark--bg_card);
+
+  --theme--scrollbar_track: transparent;
+  --theme--scrollbar_thumb: rgba(255, 255, 255, 0.05);
+  --theme--scrollbar_thumb-hover: rgba(255, 255, 255, 0.07);
+
+  --theme--ui_shadow: rgba(0, 0, 0, 0.09);
+  --theme--ui_divider: rgba(255, 255, 255, 0.16);
+  --theme--ui_interactive-hover: rgba(255, 255, 255, 0.07);
+  --theme--ui_interactive-active: rgba(255, 255, 255, 0.16);
+  --theme--ui_toggle-on: var(--theme--accent_blue);
+  --theme--ui_toggle-off: rgba(255, 255, 255, 0.05);
+  --theme--ui_corner_action: var(--smooth_dark--ui_corner_action, rgb(53, 58, 70));
+  --theme--ui_corner_action-hover: var(
+    --smooth_dark--ui_corner_action-hover,
+    rgb(64, 69, 80)
+  );
+  --theme--ui_corner_action-active: var(
+    --smooth_dark--ui_corner_action-active,
+    rgb(77, 82, 93)
+  );
+
+  --theme--icon: rgb(255, 255, 255, 0.87);
+  --theme--icon_secondary: rgba(255, 255, 255, 0.6);
+
+  --theme--text: rgba(255, 255, 255, 0.87);
+  --theme--text_secondary: rgb(255, 255, 255, 0.6);
+
+  --theme--highlight_red: var(--smooth_dark--highlight_red);
+  --theme--highlight_orange: var(--smooth_dark--highlight_orange);
+  --theme--highlight_yellow: var(--smooth_dark--highlight_yellow);
+  --theme--highlight_green: var(--smooth_dark--highlight_green);
+  --theme--highlight_blue: var(--smooth_dark--highlight_blue);
+  --theme--highlight_purple: var(--smooth_dark--highlight_purple);
+  --theme--highlight_pink: var(--smooth_dark--highlight_pink);
+  --theme--highlight_gray: var(--smooth_dark--highlight_gray);
+  --theme--highlight_brown: var(--smooth_dark--highlight_brown);
+
+  --theme--highlight_gray-text: rgba(255, 255, 255, 0.87); /* stays the same for both */
+  --theme--highlight_brown-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_orange-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_yellow-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_green-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_blue-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_purple-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_pink-text: var(--smooth_dark--highlight-text);
+  --theme--highlight_red-text: var(--smooth_dark--highlight-text);
+
+  --theme--callout_red: var(--smooth_dark--callout_red);
+  --theme--callout_orange: var(--smooth_dark--callout_orange);
+  --theme--callout_yellow: var(--smooth_dark--callout_yellow);
+  --theme--callout_green: var(--smooth_dark--callout_green);
+  --theme--callout_blue: var(--smooth_dark--callout_blue);
+  --theme--callout_purple: var(--smooth_dark--callout_purple);
+  --theme--callout_pink: var(--smooth_dark--callout_pink);
+  --theme--callout_gray: var(--smooth_dark--callout_gray);
+  --theme--callout_brown: var(--smooth_dark--callout_brown);
+
+  --theme--callout_gray-text: var(--theme--text);
+  --theme--callout_brown-text: var(--theme--text);
+  --theme--callout_orange-text: var(--theme--text);
+  --theme--callout_yellow-text: var(--theme--text);
+  --theme--callout_green-text: var(--theme--text);
+  --theme--callout_blue-text: var(--theme--text);
+  --theme--callout_purple-text: var(--theme--text);
+  --theme--callout_pink-text: var(--theme--text);
+  --theme--callout_red-text: var(--theme--text);
+
+  --theme--tag_red: var(--smooth_dark--tag_red);
+  --theme--tag_orange: var(--smooth_dark--tag_orange);
+  --theme--tag_yellow: var(--smooth_dark--tag_yellow);
+  --theme--tag_green: var(--smooth_dark--tag_green);
+  --theme--tag_blue: var(--smooth_dark--tag_blue);
+  --theme--tag_purple: var(--smooth_dark--tag_purple);
+  --theme--tag_pink: var(--smooth_dark--tag_pink);
+  --theme--tag_gray: var(--smooth_dark--tag_gray);
+  --theme--tag_light_gray: var(--smooth_dark--tag_light_gray);
+  --theme--tag_brown: var(--smooth_dark--tag_brown);
+
+  --theme--tag_default: rgba(255, 255, 255, 0.14);
+  --theme--tag_default-text: var(--smooth_dark--tag-text);
+  --theme--tag_light_gray-text: var(--smooth_dark--tag-text);
+  --theme--tag_gray-text: var(--smooth_dark--tag-text);
+  --theme--tag_brown-text: var(--smooth_dark--tag-text);
+  --theme--tag_orange-text: var(--smooth_dark--tag-text);
+  --theme--tag_yellow-text: var(--smooth_dark--tag-text);
+  --theme--tag_green-text: var(--smooth_dark--tag-text);
+  --theme--tag_blue-text: var(--smooth_dark--tag-text);
+  --theme--tag_purple-text: var(--smooth_dark--tag-text);
+  --theme--tag_pink-text: var(--smooth_dark--tag-text);
+  --theme--tag_red-text: var(--smooth_dark--tag-text);
+
+  --theme--board_red: var(--smooth_dark--board_red);
+  --theme--board_orange: var(--smooth_dark--board_orange);
+  --theme--board_yellow: var(--smooth_dark--board_yellow);
+  --theme--board_green: var(--smooth_dark--board_green);
+  --theme--board_blue: var(--smooth_dark--board_blue);
+  --theme--board_purple: var(--smooth_dark--board_purple);
+  --theme--board_pink: var(--smooth_dark--board_pink);
+  --theme--board_gray: var(--smooth_dark--board_gray);
+  --theme--board_light_gray: var(--smooth_dark--board_light_gray);
+  --theme--board_brown: var(--smooth_dark--board_brown);
+
+  --theme--board_light_gray-card: var(--smooth_dark--board-card);
+  --theme--board_gray-card: var(--smooth_dark--board-card);
+  --theme--board_brown-card: var(--smooth_dark--board-card);
+  --theme--board_orange-card: var(--smooth_dark--board-card);
+  --theme--board_yellow-card: var(--smooth_dark--board-card);
+  --theme--board_green-card: var(--smooth_dark--board-card);
+  --theme--board_blue-card: var(--smooth_dark--board-card);
+  --theme--board_purple-card: var(--smooth_dark--board-card);
+  --theme--board_pink-card: var(--smooth_dark--board-card);
+  --theme--board_red-card: var(--smooth_dark--board-card);
+  --theme--board_light_gray-text: var(--theme--text);
+  --theme--board_gray-text: var(--theme--text);
+  --theme--board_brown-text: var(--theme--text);
+  --theme--board_orange-text: var(--theme--text);
+  --theme--board_yellow-text: var(--theme--text);
+  --theme--board_green-text: var(--theme--text);
+  --theme--board_blue-text: var(--theme--text);
+  --theme--board_purple-text: var(--theme--text);
+  --theme--board_pink-text: var(--theme--text);
+  --theme--board_red-text: var(--theme--text);
+  --theme--board_light_gray-card_text: inherit;
+  --theme--board_gray-card_text: inherit;
+  --theme--board_brown-card_text: inherit;
+  --theme--board_orange-card_text: inherit;
+  --theme--board_yellow-card_text: inherit;
+  --theme--board_green-card_text: inherit;
+  --theme--board_blue-card_text: inherit;
+  --theme--board_purple-card_text: inherit;
+  --theme--board_pink-card_text: inherit;
+  --theme--board_red-card_text: inherit;
+
+  --theme--code_inline-text: #adf5c3;
+  --theme--code_inline: rgba(127, 127, 127, 0.2);
+
+  --theme--code: var(--smooth_dark--code, rgba(66, 71, 82, 0.8));
+  --theme--code_plain: var(--theme--text);
+  --theme--code_property: var(--theme--text_yellow);
+  --theme--code_tag: var(--theme--text_red);
+  --theme--code_boolean: var(--theme--text_blue);
+  --theme--code_number: var(--theme--text_red);
+  --theme--code_constant: var(--theme--text_yellow);
+  --theme--code_symbol: var(--theme--text_yellow);
+  --theme--code_deleted: var(--theme--text_red);
+  --theme--code_selector: var(--theme--text_yellow);
+  --theme--code_attr-name: var(--theme--text_red);
+  --theme--code_string: var(--theme--text_green);
+  --theme--code_char: var(--theme--code_string);
+  --theme--code_builtin: var(--theme--text_yellow);
+  --theme--code_inserted: var(--theme--text_green);
+  --theme--code_operator: var(--theme--text_blue);
+  --theme--code_entity: var(--theme--text_green);
+  --theme--code_url: var(--theme--code_string);
+  --theme--code_variable: var(--theme--text_green);
+  --theme--code_comment: var(--theme--text_gray);
+  --theme--code_cdata: var(--theme--code_comment);
+  --theme--code_prolog: var(--theme--code_comment);
+  --theme--code_doctype: var(--theme--code_comment);
+  --theme--code_atrule: var(--theme--text_blue);
+  --theme--code_attr-value: var(--theme--text_green);
+  --theme--code_keyword: var(--theme--text_purple);
+  --theme--code_regex: var(--theme--text_orange);
+  --theme--code_important: var(--theme--text_orange);
+  --theme--code_function: var(--theme--text_yellow);
+  --theme--code_class-name: var(--theme--code_function);
+  --theme--code_parameter: var(--theme--text_orange);
+  --theme--code_decorator: var(--theme--text_blue);
+  --theme--code_id: var(--theme--text_purple);
+  --theme--code_class: var(--theme--text_pink);
+  --theme--code_pseudo-element: var(--theme--text_red);
+  --theme--code_pseudo-class: var(--theme--text_orange);
+  --theme--code_attribute: var(--theme--text_blue);
+  --theme--code_value: var(--theme--text_orange);
+  --theme--code_unit: var(--theme--code_number);
+  --theme--code_punctuation: var(--theme--code_plain);
+  --theme--code_annotation: var(--theme--text_blue);
+}

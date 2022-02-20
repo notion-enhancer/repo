@@ -1,0 +1,76 @@
+{
+  "name": "smooth dark",
+  "id": "46fdda12-d614-4154-a313-61619d1732a8",
+  "version": "0.1.0",
+  "description": "a highly configurable dark theme.",
+  "preview": "smooth-dark.png",
+  "tags": ["theme", "dark"],
+  "authors": [
+    {
+      "name": "blorb",
+      "homepage": "https://github.com/blorbb",
+      "avatar": "https://avatars.githubusercontent.com/u/88137137"
+    }
+  ],
+  "css": {
+    "frame": ["variables.css"],
+    "client": ["variables.css", "app.css"],
+    "menu": ["variables.css"]
+  },
+  "js": {
+    "frame": ["theme.mjs"],
+    "client": ["theme.mjs"],
+    "menu": ["theme.mjs"]
+  },
+  "options": [
+    {
+      "type": "color",
+      "key": "background",
+      "label": "background color",
+      "tooltip": "**sets the background color** affects many other elements that are based on the background",
+      "value": "rgba(33, 39, 52, 1)"
+    },
+    {
+      "type": "color",
+      "key": "primary",
+      "label": "primary accent color",
+      "tooltip": "**replaces notion's blue accent**",
+      "value": "rgba(255, 171, 0, 1)"
+    },
+    {
+      "type": "color",
+      "key": "secondary",
+      "label": "secondary accent color",
+      "tooltip": "**replaces notion's red accent**",
+      "value": "rgba(235, 87, 87, 1)"
+    },
+    {
+      "type": "number",
+      "key": "bg_secondary_tint",
+      "tooltip": "**sidebar and cal/timeline weekends brightness**, based on the background: positive values brighten, negative values darken (-100 to 100)",
+      "label": "background secondary overlay (%)",
+      "value": -13
+    },
+    {
+      "type": "number",
+      "key": "bg_card_tint",
+      "tooltip": "**cards and popup menu brightness**, based on the background: positive values brighten, negative values darken (-100 to 100)",
+      "label": "card overlay (%)",
+      "value": 7
+    },
+    {
+      "type": "select",
+      "key": "color_profile",
+      "tooltip": "**pastel: lighter highlights, highlighted text is black for better contrast. regular: more saturated highlights, highlighted text stays white.**",
+      "label": "color type",
+      "values": ["pastel", "regular"]
+    },
+    {
+      "type": "number",
+      "key": "border_radius",
+      "tooltip": "**adds rounding to the corner of highlighted text** (non-negative integer)",
+      "label": "highlight border radius (px)",
+      "value": 3
+    }
+  ]
+}
