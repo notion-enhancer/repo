@@ -62,7 +62,7 @@
       "type": "select",
       "key": "color_profile",
       "tooltip": "**pastel: lighter highlights, highlighted text is black for better contrast. regular: more saturated highlights, highlighted text stays white.**",
-      "label": "color type",
+      "label": "color profile",
       "values": ["pastel", "regular"]
     },
     {
