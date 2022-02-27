@@ -42,38 +42,34 @@ export default async function ({ fmt }, db) {
         .split(',')
         .map((i) => parseInt(i));
 
-    if (!(r === 33 && g === 39 && b === 52)) {
-      document.documentElement.style.setProperty('--smooth_dark--bg', background);
-      // other bg dependent colors
-      document.documentElement.style.setProperty(
-        '--smooth_dark--ui_corner_action',
-        rgbLinearShade(0.09, background)
-      );
-      document.documentElement.style.setProperty(
-        '--smooth_dark--ui_corner_action-hover',
-        rgbLinearShade(0.14, background)
-      );
-      document.documentElement.style.setProperty(
-        '--smooth_dark--ui_corner_action-active',
-        rgbLinearShade(0.2, background)
-      );
-      // with some opacity
-      document.documentElement.style.setProperty(
-        '--smooth_dark--code',
-        rgbLinearShade(0.15, `rgba(${r}, ${g}, ${b}, 0.8)`)
-      );
-    }
-
-
-
+    // backgrounds
+    document.documentElement.style.setProperty('--smooth_dark--bg', background);
     document.documentElement.style.setProperty(
       '--smooth_dark--bg_secondary',
       rgbLinearShade(bgSecondaryTint / 100, background)
     );
-
     document.documentElement.style.setProperty(
       '--smooth_dark--bg_card',
       rgbLinearShade(cardTint / 100, background)
+    );
+
+    // other bg dependent colors
+    document.documentElement.style.setProperty(
+      '--smooth_dark--ui_corner_action',
+      rgbLinearShade(0.09, background)
+    );
+    document.documentElement.style.setProperty(
+      '--smooth_dark--ui_corner_action-hover',
+      rgbLinearShade(0.14, background)
+    );
+    document.documentElement.style.setProperty(
+      '--smooth_dark--ui_corner_action-active',
+      rgbLinearShade(0.2, background)
+    );
+    // with some opacity
+    document.documentElement.style.setProperty(
+      '--smooth_dark--code',
+      rgbLinearShade(0.15, `rgba(${r}, ${g}, ${b}, 0.8)`)
     );
   }
 
@@ -83,25 +79,25 @@ export default async function ({ fmt }, db) {
         .slice(5, -1)
         .split(',')
         .map((i) => parseInt(i));
-    if (!(r === 255 && g === 171 && b === 0)) {
-      document.documentElement.style.setProperty('--smooth_dark--accent_blue', primary);
-      document.documentElement.style.setProperty(
-        '--smooth_dark--accent_blue-selection',
-        `rgba(${r},${g},${b},0.2)`
-      );
-      document.documentElement.style.setProperty(
-        '--smooth_dark--accent_blue-hover',
-        rgbLinearShade(0.07, primary)
-      );
-      document.documentElement.style.setProperty(
-        '--smooth_dark--accent_blue-active',
-        rgbLinearShade(0.16, primary)
-      );
-      document.documentElement.style.setProperty(
-        '--smooth_dark--accent_blue-text',
-        fmt.rgbContrast(r, g, b)
-      );
-    }
+
+    // primary colors
+    document.documentElement.style.setProperty('--smooth_dark--accent_blue', primary);
+    document.documentElement.style.setProperty(
+      '--smooth_dark--accent_blue-selection',
+      `rgba(${r},${g},${b},0.2)`
+    );
+    document.documentElement.style.setProperty(
+      '--smooth_dark--accent_blue-hover',
+      rgbLinearShade(0.07, primary)
+    );
+    document.documentElement.style.setProperty(
+      '--smooth_dark--accent_blue-active',
+      rgbLinearShade(0.16, primary)
+    );
+    document.documentElement.style.setProperty(
+      '--smooth_dark--accent_blue-text',
+      fmt.rgbContrast(r, g, b)
+    );
   }
 
   {
@@ -110,17 +106,17 @@ export default async function ({ fmt }, db) {
         .slice(5, -1)
         .split(',')
         .map((i) => parseInt(i));
-    if (!(r === 235 && g === 87 && b === 87)) {
-      document.documentElement.style.setProperty('--smooth_dark--accent_red', secondary);
-      document.documentElement.style.setProperty(
-        '--smooth_dark--accent_red-button',
-        `rgba(${r},${g},${b},0.1)`
-      );
-      document.documentElement.style.setProperty(
-        '--smooth_dark--accent_red-text',
-        fmt.rgbContrast(r, g, b)
-      );
-    }
+
+    // secondary colors
+    document.documentElement.style.setProperty('--smooth_dark--accent_red', secondary);
+    document.documentElement.style.setProperty(
+      '--smooth_dark--accent_red-button',
+      `rgba(${r},${g},${b},0.1)`
+    );
+    document.documentElement.style.setProperty(
+      '--smooth_dark--accent_red-text',
+      fmt.rgbContrast(r, g, b)
+    );
   }
 
   {
@@ -369,7 +365,7 @@ export default async function ({ fmt }, db) {
       );
       document.documentElement.style.setProperty(
         '--smooth_dark--text_purple',
-        'rgba(90, 163, 226, 1)'  // lowered saturation
+        'rgba(90, 163, 226, 1)' // lower saturation
       );
       document.documentElement.style.setProperty(
         '--smooth_dark--text_pink',
