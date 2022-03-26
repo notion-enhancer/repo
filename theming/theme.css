@@ -60,6 +60,10 @@ body,
 .notion-timeline-view > :nth-child(2) > :first-child > div > div svg {
   fill: var(--theme--bg) !important;
 }
+.notion-list-view
+  .notion-collection-item > a {
+    background: var(--theme--bg) !important;
+}
 
 .notion-sidebar-container,
 .notion-sidebar > [style*='border-top-right-radius'],
