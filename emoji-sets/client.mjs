@@ -22,12 +22,16 @@ export default async function ({ web, env }, db) {
       emoji = encodeURIComponent(emoji);
       if (unsupportedEmojis.includes(emoji)) return undefined;
       try {
+        const src = `https://emojicdn.elk.sh/${emoji}?style=${style}`;
         if (!emojiReqs.get(emoji)) {
-          emojiReqs.set(emoji, fetch(`https://emojicdn.elk.sh/${emoji}?style=${style}`));
+          emojiReqs.set(emoji, fetch(src));
         }
         const res = await emojiReqs.get(emoji);
         if (!res.ok) throw new Error();
-        return `url("https://emojicdn.elk.sh/${emoji}?style=${style}") 100% 100% / 100%`;
+        return {
+          css: `url("${src}") 100% 100% / 100%`,
+          src
+        };
       } catch {
         unsupportedEmojis.push(emoji);
         return undefined;
@@ -40,7 +44,7 @@ export default async function ({ web, env }, db) {
       for (const $emoji of $emojis) {
         const emojiSrc = await getEmoji($emoji.ariaLabel);
         if (emojiSrc) {
-          $emoji.style.background = emojiSrc;
+          $emoji.style.background = emojiSrc.css;
           $emoji.style.width = '1em';
           $emoji.style.height = '1em';
           $emoji.style.display = 'inline-block';
@@ -54,14 +58,21 @@ export default async function ({ web, env }, db) {
   if (style !== 'twitter' && imgEmojis) {
     const updateEmojis = async () => {
       const $emojis = document.querySelectorAll(imgEmojiSelector);
+      const pageEmoji = document.querySelector(`.pseudoSelection ${imgEmojiSelector}`);
+      const favicon = document.querySelector("link[rel~='icon']");
       for (const $emoji of $emojis) {
         const emojiSrc = await getEmoji($emoji.ariaLabel);
         if (emojiSrc) {
-          $emoji.style.background = emojiSrc;
+          $emoji.style.background = emojiSrc.css;
           $emoji.style.opacity = 1;
           if ($emoji.nextElementSibling?.matches?.(imgEmojiOverlaySelector)) {
             $emoji.nextElementSibling.style.opacity = 0;
           }
+          if (
+            !favicon.href.startsWith(window.origin + "/image") &&
+            $emoji.isSameNode(pageEmoji)
+          )
+            favicon.href = emojiSrc.src;
         } else $emoji.dataset.emojiSetsUnsupported = true;
       }
     };
